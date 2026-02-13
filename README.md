@@ -1,3 +1,5 @@
+suado apt install npm nodejs
+
 Создаем папку проекта Amur
 
 npm create vite@latest front -- --template react
