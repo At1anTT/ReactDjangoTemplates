@@ -1,8 +1,8 @@
 import "./App.css";
-import { Navbar } from "./components/Navbar/Navbar";
+import { TestPost } from "./components/Test";
 
 function App() {
-  return <Navbar />;
+  return < TestPost/>;
 }
 
 export default App;

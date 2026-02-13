@@ -1,4 +1,10 @@
-# Logs
+# --- Артефакты Node.js и сборка ---
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# --- Логи и отчеты ---
 logs
 *.log
 npm-debug.log*
@@ -6,19 +12,36 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+TEST*.xml
 
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
+# --- Настройки IDE и редакторов ---
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# --- Системные файлы ОС ---
+.DS_Store
+Thumbs.db
+
+# --- Большие медиафайлы ---
+*.mp4
+*.tiff
+*.avi
+*.flv
+*.mov
+*.wmv
+
+# --- Скомпилированные файлы и пакеты (Java/Maven) ---
+*.class
+*.jar
+target/
+
+# --- Приложения ---
+*.app
+*.exe
+*.war

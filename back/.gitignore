@@ -1,0 +1,32 @@
+# --- Окружение Python ---
+venv/
+.venv/
+env/
+ENV/
+bin/
+lib/
+share/
+
+# --- Скомпилированные файлы Python ---
+*.py[cod]
+*$py.class
+__pycache__/
+
+# --- Специфично для Django ---
+db.sqlite3
+local_settings.py
+.env
+*.log
+media/
+staticfiles/
+
+# --- Настройки IDE и ОС ---
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# --- Приложения и архивы ---
+*.app
+*.exe
+*.war

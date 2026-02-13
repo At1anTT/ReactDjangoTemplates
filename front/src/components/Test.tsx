@@ -1,6 +1,6 @@
 // src/components/TestPost.tsx
 import { useState } from 'react';
-import axios from 'axios';
+import axiosInstance from '../config/axios.ts';
 
 export function TestPost() {
   const [greeting, setGreeting] = useState<string>('');
@@ -8,7 +8,7 @@ export function TestPost() {
   const handlePostRequest = async () => {
     try {
       // Отправляем POST-запрос на наш эндпоинт
-      const response = await axios.post('http://127.0.0.1');
+      const response = await axiosInstance.post('/api/hello/');
       
       // Сохраняем сообщение из ответа в стейт
       setGreeting(response.data.message);
